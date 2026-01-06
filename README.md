@@ -16,6 +16,7 @@ Demonstrate why CNNs are necessary for image-based tasks
 
 Perform quantitative and qualitative evaluation, not just accuracy comparison
 
+
 🗂️ Project Structure
 ann-to-cnn-model-selection/
 │
@@ -30,6 +31,8 @@ ann-to-cnn-model-selection/
 │
 ├── README.md
 
+
+
 📊 Part 1: Tabular Data — Logistic Regression & ANN
 Dataset
 
@@ -38,6 +41,7 @@ Breast Cancer Wisconsin Dataset
 30 numerical features
 
 Binary classification task
+
 
 🔹 Baseline Model: Logistic Regression
 
@@ -49,9 +53,11 @@ It provides interpretability
 
 It sets a realistic performance benchmark
 
+
 🔹 ANN Model
 
 A fully connected Artificial Neural Network (ANN) was trained on the same dataset to evaluate whether a deeper model adds value.
+
 
 ✅ Key Observation
 
@@ -59,11 +65,14 @@ ANN and Logistic Regression achieved similar accuracy and confusion matrices
 
 Error patterns were nearly identical
 
+
 🧠 Insight
 
 On structured tabular data with well-engineered features, increasing model complexity does not necessarily improve performance.
 
 This validates the importance of starting with baselines before applying deep learning.
+
+
 
 🖼️ Part 2: Image Data — CNN from Scratch
 Dataset
@@ -73,6 +82,7 @@ MNIST handwritten digits
 28×28 grayscale images
 
 10-class classification problem
+
 
 🔹 Why CNN?
 
@@ -86,6 +96,7 @@ Translation invariance requirements
 
 ANNs and classical ML models fail to exploit these properties effectively.
 
+
 🔹 CNN Architecture
 
 Convolutional layers for feature extraction
@@ -97,6 +108,7 @@ Dense layers for classification
 Softmax output for multi-class prediction
 
 The CNN was built from scratch, without transfer learning.
+
 
 📈 Evaluation & Analysis
 Metrics Used
@@ -123,6 +135,8 @@ Visualization of incorrect predictions for error analysis
 
 Automatic comparison with ground truth labels (no manual inspection)
 
+
+
 🧠 Key Learnings
 
 Deep learning is not always necessary
@@ -134,6 +148,7 @@ ANN ≠ CNN — architecture must match data structure
 CNNs excel when spatial information is critical
 
 Model evaluation should include qualitative analysis, not just metrics
+
 
 🚀 Technologies Used
 
@@ -149,10 +164,12 @@ Matplotlib & Seaborn
 
 Google Colab
 
+
 📌 Final Takeaway
 
 Model selection should be driven by data characteristics, not by model complexity.
 This project demonstrates a principled transition from Logistic Regression → ANN → CNN based on empirical evidence.
+
 
 🔗 Future Work
 
